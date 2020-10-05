@@ -11,8 +11,3 @@ func main() {
 	err := http.ListenAndServe(":8080", nil)
 	log.Fatal(err)
 }
-
-
-func index(w http.ResponseWriter, r *http.Request){
-	w.Write([]byte("heyo"))
-}
